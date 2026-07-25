@@ -1,0 +1,39 @@
+{
+  "name": "instituition-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "npx prisma db push",
+    "db:seed": "npx prisma db seed",
+    "db:studio": "npx prisma studio"
+  },
+  "dependencies": {
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "@prisma/client": "^6.9.0",
+    "bcryptjs": "^3.0.2",
+    "next-auth": "^5.0.0-beta.25",
+    "@auth/prisma-adapter": "^2.9.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/bcryptjs": "^2.4.6",
+    "prisma": "^6.9.0",
+    "tailwindcss": "^4.1.7",
+    "@tailwindcss/postcss": "^4.1.7",
+    "postcss": "^8.5.3",
+    "eslint": "^9.25.0",
+    "eslint-config-next": "^15.3.3"
+  },
+  "prisma": {
+    "seed": "npx tsx prisma/seed.ts"
+  }
+}
